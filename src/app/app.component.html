@@ -1,8 +1,0 @@
-<div class="container">
-  <p for="text" class="text-center">How Can I Help You: </p> 
-  <input (keyup.enter)="getChunck(val.value)" #val type="text" id="text" class="form-control">
-  <button type="button" for="text" class="btn btn-success" (click)="getChunck(val.value)">Submit</button>
-  <pre *ngIf="Answer">
-    {{Answer}}
-  </pre>
-</div>
