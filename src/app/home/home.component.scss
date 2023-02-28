@@ -1,0 +1,19 @@
+.area{
+    width: 100vh;
+    height: 70vh;
+}
+
+.start{
+    margin: 5px; 
+    float: right;
+    &:active{
+        opacity: 0.5;
+    }
+}
+
+.sub{
+    margin: 5px;
+    &:active{
+        opacity: 0.5;
+    }
+}
