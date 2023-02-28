@@ -1,7 +1,7 @@
 <div class="container mt-4">
     <form [formGroup]="form" (ngSubmit)="getAns()">
         <p for="text" class="text-center">How Can I Help You: </p> 
-        <input [attr.disabled]="!Authorization" id="text" (keyup.enter)="getAns()" formControlName="question" type="text" id="text" class="form-control">
+        <input [attr.disabled]="Authorization? null:''" id="text" (keyup.enter)="getAns()" formControlName="question" type="text" id="text" class="form-control">
         <div>
           <button [disabled]="!Authorization" type="submit" class="btn btn-success sub">Submit</button>
           <button [disabled]="!Authorization" type="reset" class="btn btn-secondary sub">Clear</button>
