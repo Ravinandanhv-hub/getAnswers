@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   }
   ngOnInit(){
     this.service.speechShare.subscribe(x=>{
-      if(!(x=='undefined')){
+      if(!(x==' undefined')){
         this.form.patchValue({question:x})
       }
       if(x=='undefined'){
